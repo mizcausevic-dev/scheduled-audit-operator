@@ -1,0 +1,12 @@
+apiVersion: ops.kineticgain.com/v1alpha1
+kind: ScheduledAudit
+metadata:
+  name: nightly-mcp-scan
+  namespace: default
+spec:
+  schedule: "0 3 * * *"
+  image: ghcr.io/mizcausevic-dev/mcp-registry-risk-scanner:latest
+  args:
+    - /manifests/server.json
+    - --gate
+    - high

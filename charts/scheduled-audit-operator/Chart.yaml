@@ -1,0 +1,18 @@
+apiVersion: v2
+name: scheduled-audit-operator
+description: Kubernetes operator that runs recurring governance/compliance audits as CronJobs from a declarative ScheduledAudit resource.
+type: application
+version: 0.1.0
+appVersion: "0.1.0"
+keywords:
+  - kubernetes
+  - operator
+  - cronjob
+  - audit
+  - governance
+  - compliance
+home: https://suite.kineticgain.com
+sources:
+  - https://github.com/mizcausevic-dev/scheduled-audit-operator
+maintainers:
+  - name: mizcausevic-dev
